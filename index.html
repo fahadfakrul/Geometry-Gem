@@ -45,16 +45,16 @@
               <h2 class="card-title">Rectangle</h2>
               <p>Area (A) = w X l</p>
               <div>
-                <input id="triangle-base" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="w">
+                <input id="rectangle-width" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="w">
               <span class="mr-2 ">cm</span>
-              <input id="triangle-height" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="l"> 
+              <input id="rectangle-length" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="l"> 
               <span >cm</span>
               <div>
-                <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+                <p class="text-2xl">Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
               </div>
               </div>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -77,6 +77,7 @@
 </div>
     </main>
     <script src="scripts/triangle-calculate.js"></script>
+    <script src="scripts/rectangle-calculate.js"></script>
 </body>
 
 </html>
