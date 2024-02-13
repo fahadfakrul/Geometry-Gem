@@ -19,15 +19,15 @@
     <!-- shape card container -->
     <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Triangle -->
-        <div class="card w-full bg-base-100 shadow-xl">
+        <div id="card-1" onmouseover="card1InColor()" onmouseout="card1OutColor()"  class="card w-full bg-base-100 shadow-xl">
             <figure><img src="./images/triangle.png" alt="Triangle" /></figure>
             <div class="card-body">
               <h2 class="card-title ">Triangle</h2>
               <p class="text-center">Area (A) = 0.5 X b X h</p>
               <div>
-                <input id="triangle-base" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="b">
+                <input id="triangle-base" class="w-16 text-2xl p-2 rounded-lg" type="text" placeholder="b">
               <span class="mr-2 ">cm</span>
-              <input id="triangle-height" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="h"> 
+              <input id="triangle-height" class="w-16 text-2xl p-2 rounded-lg" type="text" placeholder="h"> 
               <span >cm</span>
               <div>
                 <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
@@ -39,15 +39,15 @@
             </div>
           </div>
           <!-- Rectangle -->
-          <div class="card w-full bg-base-100 shadow-xl">
+          <div id="card-2" onmouseover="card2InColor()" onmouseout="card2OutColor()" class="card w-full bg-base-100 shadow-xl">
             <figure ><img class="mt-5" src="./images/rectangle.png" alt="Rectangle" /></figure>
             <div class="card-body">
               <h2 class="card-title">Rectangle</h2>
               <p class="text-center">Area (A) = w X l</p>
               <div>
-                <input id="rectangle-width" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="w">
+                <input id="rectangle-width" class="w-16 text-2xl p-2 rounded-lg" type="text" placeholder="w">
               <span class="mr-2 ">cm</span>
-              <input id="rectangle-length" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="l"> 
+              <input id="rectangle-length" class="w-16 text-2xl p-2 rounded-lg" type="text" placeholder="l"> 
               <span >cm</span>
               <div>
                 <p class="text-2xl">Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
@@ -59,15 +59,15 @@
             </div>
           </div>
           <!-- Parallelogram -->
-          <div class="card w-full bg-base-100 shadow-xl">
+          <div id="card-3" onmouseover="card3InColor()" onmouseout="card3OutColor()" class="card w-full bg-base-100 shadow-xl">
             <figure ><img class="mt-9" src="./images/parallelogram.png" alt="Parallelogram" /></figure>
             <div class="card-body">
               <h2 class="card-title">Parallelogram</h2>
               <p class="text-center">Area (A) = b X h</p>
               <div>
-                <input id="parallelogram-base" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="b">
+                <input id="parallelogram-base" class="w-16 text-2xl p-2 rounded-lg" type="text" placeholder="b">
               <span class="mr-2 ">cm</span>
-              <input id="parallelogram-height" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="h"> 
+              <input id="parallelogram-height" class="w-16 text-2xl p-2 rounded-lg" type="text" placeholder="h"> 
               <span >cm</span>
               <div>
                 <p class="text-2xl">Area: <span id="parallelogram-area"></span> <span>cm<sup>2</sup></span></p>
@@ -79,15 +79,15 @@
             </div>
           </div>
           <!-- Rhombus -->
-          <div class="card w-full bg-base-100 shadow-xl">
+          <div id="card-4" onmouseover="card4InColor()" onmouseout="card4OutColor()" class="card w-full bg-base-100 shadow-xl">
             <figure ><img class="mt-5" src="./images/rhombus.png" alt="Rhombus" /></figure>
             <div class="card-body">
               <h2 class="card-title">Rhombus</h2>
               <p class="text-center">Area (A) = 0.5 X d1 X d2</p>
               <div>
-                <input id="rhombus-first-diagonal" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="d1">
+                <input id="rhombus-first-diagonal" class="w-16 text-2xl p-2 rounded-lg" type="text" placeholder="d1">
               <span class="mr-2 ">cm</span>
-              <input id="rhombus-second-diagonal" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="d2"> 
+              <input id="rhombus-second-diagonal" class="w-16 text-2xl p-2 rounded-lg" type="text" placeholder="d2"> 
               <span >cm</span>
               <div>
                 <p class="text-2xl">Area: <span id="rhombus-area"></span> <span>cm<sup>2</sup></span></p>
@@ -99,15 +99,15 @@
             </div>
           </div>
           <!-- Pentagon -->
-          <div class="card w-full bg-base-100 shadow-xl">
+          <div id="card-5" onmouseover="card5InColor()" onmouseout="card5OutColor()" class="card w-full bg-base-100 shadow-xl">
             <figure ><img class="mt-5" src="./images/pentagon.png" alt="Pentagon" /></figure>
             <div class="card-body">
               <h2 class="card-title">Pentagon</h2>
               <p class="text-center">Area (A) = 0.5 X p X b</p>
               <div>
-                <input id="pentagon-perimeter" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="p">
+                <input id="pentagon-perimeter" class="w-16 text-2xl p-2 rounded-lg" type="text" placeholder="p">
               <span class="mr-2 ">cm</span>
-              <input id="pentagon-apothem" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="b"> 
+              <input id="pentagon-apothem" class="w-16 text-2xl p-2 rounded-lg" type="text" placeholder="b"> 
               <span >cm</span>
               <div>
                 <p class="text-2xl">Area: <span id="pentagon-area"></span> <span>cm<sup>2</sup></span></p>
@@ -119,15 +119,15 @@
             </div>
           </div>
           <!-- Ellipse -->
-          <div class="card w-full bg-base-100 shadow-xl">
+          <div id="card-6" onmouseover="card6InColor()" onmouseout="card6OutColor()" class="card w-full bg-base-100 shadow-xl">
             <figure ><img class="mt-8" src="./images/ellipse.png" alt="Ellipse" /></figure>
             <div class="card-body">
               <h2 class="card-title">Ellipse</h2>
               <p class="text-center">Area (A) = π X a X b</p>
               <div>
-                <input id="ellipse-major-axis" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="a">
+                <input id="ellipse-major-axis" class="w-16 text-2xl p-2 rounded-lg" type="text" placeholder="a">
               <span class="mr-2 ">cm</span>
-              <input id="ellipse-minor-axis" class="w-16 text-2xl p-2 rounded-sm" type="text" placeholder="b"> 
+              <input id="ellipse-minor-axis" class="w-16 text-2xl p-2 rounded-lg" type="text" placeholder="b"> 
               <span >cm</span>
               <div>
                 <p class="text-2xl">Area: <span id="ellipse-area"></span> <span>cm<sup>2</sup></span></p>
@@ -149,6 +149,7 @@
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
     <script src="scripts/calculate-area.js"></script>
+    <script src="scripts/color.js"></script>
 </body>
 
 </html>
